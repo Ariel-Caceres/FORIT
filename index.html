@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>FORIT</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>FORIT </h1>
+            <p>Ingreso a FORIT para alumnos</p>
+        </div>
+
+    </header>
+    <main>
+        <div class="buscador" >
+            <input type="text" placeholder="Buscar usuario" id="searchInput">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="boton-agregar-usuario">
+            <button>
+                <!-- <span>Agregar Usuario</span> -->
+            </button>
+            <div class="formulario">
+                <input type="text" placeholder="Nombre" id="aggUserName">
+                <input type="text" placeholder="Username" id="aggUserUsername">
+                <input type="text" placeholder="Email" id="aggUserEmail">
+                <input type="text" placeholder="Teléfono" id="aggUserPhone">
+                <input type="text" placeholder="Ciudad donde vive" id="aggUserCity">
+                <input type="text" placeholder="Nombre de empresa" id="aggUserCompName">
+                <button class="boton-agg">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Enviar nuevo usuario </span>
+                </button>    
+            </div>
+        </div>
+        <ul class="result-list" id="resultList"></ul>
+        <div class="container-de-usuarios">
+        </div>
+
+    </main>
+    
+</body>
+<script src="./index.js"></script>
+</html>
